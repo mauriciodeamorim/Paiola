@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body	{
+	background-color:#fff;
+}
+
+a:link {
+	color: #000;
+	text-decoration:none;
+	
+}
+a:visited {
+	color: #000;
+	text-decoration:none;
+}
+a:hover {
+	color: #000;
+	text-decoration:underline;
+
+
+}
+
+.txt	{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000;
+	text-align:center;
+}

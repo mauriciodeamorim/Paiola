@@ -1,0 +1,41 @@
+/* CSS Document */
+
+/*Define a borda das caixas de texto do form*/
+.box_txt, .box_ddd, .box_tel, .btn, .captcha input{
+	border: 1px #CCC solid;
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color:#FFFFFF;
+	scrollbar-face-color:#FFFFFF; 
+	scrollbar-highlight-color:#FFFFFF; 
+	scrollbar-shadow-color:#FFFFFF; 
+	scrollbar-3dlight-color:#FFFFFF; 
+	scrollbar-arrow-color: #990000; 
+	scrollbar-track-color:#FFFFFF; 
+	scrollbar-darkshadow-color:#FFFFFF;
+}
+/*Define o tamanho das caixas*/
+
+.box_txt{
+	width: 100%;
+}
+.box_tel{
+	width: 100px;
+}
+.box_ddd{
+	width: 20px;
+}
+.btn{
+	width: 50px;
+	height: 20px;
+}
+.texto_form, .captcha{
+	font: 10px Arial, Helvetica, sans-serif;
+	color:#000000;
+	text-align: left;
+}
+.obrigatorio{
+	font: 9px Verdana, Arial, Helvetica, sans-serif;
+	color:#FF0000;
+	font-weight:bold;
+}
