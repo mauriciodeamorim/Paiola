@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Refrigeração Paiola</title>
 <link href="estilo_enviar.css" rel="stylesheet" type="text/css" /> 
- </head>
+</head>
  <body>
    <?php
   
@@ -35,26 +35,25 @@
 	$msg_erro .= "Preencha o campo *Mensagem <br>";
 	}
 	
-	
-						if ($erro == 0) {  
-						$mensagem_ok = "$nome,
-						\nEmpresa: $empresa
-						\nEstado: $estado
-						\nCidade: $cidade
-						\nEndereço: $endereco
-						\nTelefone: $telefone
-						\nTelefone Comercial: $fax
-						\nE-mail: $email
-						\nPágina Web: $url
-						\nGostaria de  receber a visita de um técnico no local: $visita
-						\nHorario preferencial: $visita1
-						\nDescrição do defeito: $mensagem";
+        if ($erro == 0) {  
+          $mensagem_ok = "$nome,
+            \nEmpresa: $empresa
+            \nEstado: $estado
+            \nCidade: $cidade
+            \nEndereço: $endereco
+            \nTelefone: $telefone
+            \nTelefone Comercial: $fax
+            \nE-mail: $email
+            \nPágina Web: $url
+            \nGostaria de  receber a visita de um técnico no local: $visita
+            \nHorario preferencial: $visita1
+            \nDescrição do defeito: $mensagem";
 
-						if(mail("contato@paiolarefrigeracao.com.br","Mensagem - Web Site","$mensagem_ok","from: $email")) {
+          if(mail("contato@refrigeracaopaiola.com.br","Mensagem - Web Site","$mensagem_ok","from: $email")) {
 
-						echo "$nome,</strong> em breve estaremos retornando seu contato.<br><br>Obrigado.";
+            echo "$nome,</strong> em breve estaremos retornando seu contato.<br><br>Obrigado.";
 
-}
+          }
 
 }else{
 	echo "$msg_erro";
