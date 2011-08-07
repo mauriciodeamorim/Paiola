@@ -6,7 +6,7 @@
 
 
 body{
-	background-image:url(imagens/fd01.jpg);
+	background-image:url(../imagens/fd01.jpg);
 	background-attachment:fixed;
 	font: small Arial, Helvetica, sans-serif;
 	color: #333;
@@ -88,7 +88,7 @@ a:active {
 	width: 980px;
 	height: 144px;
 	float: left;
-	background:url(imagens/bg-header.jpg);
+	background:url(../imagens/bg-header.jpg);
 }
 
 #barra-topo {
@@ -96,7 +96,7 @@ a:active {
 	width: 980px;
 	height: 27px;
 	float: left;
-	background:url(imagens/barra.jpg) no-repeat;
+	background:url(../imagens/barra.jpg) no-repeat;
 }
 
 #logo {float:left;width: 334px;height:131px;margin:8px 0 0 20px;display: inline;}
@@ -105,7 +105,7 @@ a:active {
 	display: block;
 	width: 334px;
 	height: 131px;
-	background-image:url(imagens/paiola-refrigeracao.png);
+	background-image:url(../imagens/paiola-refrigeracao.png);
 	text-indent: -999px;
 	overflow:hidden;
 }
@@ -117,7 +117,7 @@ a:active {
 	display: inline;
 	margin-left:200px;
 	_margin-left:100px;
-	background: url(imagens/bg-nav.png);
+	background: url(../imagens/bg-nav.png);
 }
 #nav ul {list-style: none;width: 510px;}
 #nav ul li{float:left;}
@@ -135,7 +135,7 @@ a:active {
 	margin-left:20px;
 }
 #nav ul li a:hover {
-	background-image:url(imagens/bt-hover.png);
+	background-image:url(../imagens/bt-hover.png);
 	width: 110px;
 	height:35px;
 	margin-left:20px;
@@ -147,7 +147,7 @@ a:active {
  
 }
 #nav ul li a#ativo {
-	background-image:url(imagens/bt-hover.png); 
+	background-image:url(../imagens/bt-hover.png); 
 	width: 110px;
 	height: 35px;
 	margin-left:20px;
@@ -232,7 +232,7 @@ h2{
 	float:left;
 	width: 960px;
 	padding: 10px;
-	background:#F8F8F8 url(imagens/bg-content.jpg) repeat-x;
+	background:#F8F8F8 url(../imagens/bg-content.jpg) repeat-x;
 	overflow:hidden;
 }
 
@@ -297,7 +297,7 @@ h2{
 
 #linha{
 	float:left;
-	background:url(imagens/linha.png);
+	background:url(../imagens/linha.png);
 	width:9px;
 	height:185px;
 	margin-top:50px;
@@ -358,7 +358,7 @@ h2{
 	float:left;
 	width: 980px;
 	height:179px;
-	background: url(imagens/rodape.jpg);
+	background: url(../imagens/rodape.jpg);
 	display: block;
 	overflow: hidden;
 	border-top: 2px solid #1D75A5;
