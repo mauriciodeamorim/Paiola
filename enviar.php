@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Refrigeração Paiola</title>
-<link href="estilo_enviar.css" rel="stylesheet" type="text/css" /> 
+<link href="css/estilo_enviar.css" rel="stylesheet" type="text/css" /> 
 </head>
  <body>
    <?php
