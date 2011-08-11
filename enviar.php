@@ -49,7 +49,7 @@ if ($erro == 0) {
     \nDescrição do defeito: $mensagem";
   
   $headers = "MIME-Version: 1.1\n";
-  $headers .= "Content-type: text/plain; charset=iso-8859-1\n";
+  $headers .= "Content-type: text/plain; charset=utf-8\n";
   $headers .= "From: $email\n"; // remetente
   $headers .= "Return-Path: $email\n"; // return-path
 
@@ -67,4 +67,9 @@ else{
  <a href="assistencia-tecnica-de-refrigeradores-em-sao-paulo.html" target="_parent"><br />
  <span class="txt">&gt;&gt; Voltar</span></a>
  </body>
+<script type="text/javascript">
+  function displayMessage(message) {
+    alert(message);
+  };
+</script>
 </html>
