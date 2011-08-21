@@ -29,11 +29,6 @@ if (empty($cidade)){
   $msg_erro .= "Preencha o campo *Cidade<br>";
 }
 
-if (empty($mensagem)){
-  $erro .=$erro++;
-  $msg_erro .= "Preencha o campo *Mensagem <br>";
-}
-
 if ($erro == 0) {  
   $mensagem_ok = "$nome,
     \nEmpresa: $empresa
