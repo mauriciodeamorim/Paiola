@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Refrigeração Paiola</title>
+  <title>Refrigeração Paiola - Contato</title>
   <link href="css/estilo_enviar.css" rel="stylesheet" type="text/css" /> 
 </head>
 <body>
@@ -37,13 +37,10 @@ if (empty($mensagem)){
 if ($erro == 0) {  
   $mensagem_ok = "$nome,
     \nEmpresa: $empresa
-    \nEstado: $estado
     \nCidade: $cidade
     \nEndereço: $endereco
     \nTelefone: $telefone
-    \nTelefone Comercial: $fax
     \nE-mail: $email
-    \nPágina Web: $url
     \nGostaria de  receber a visita de um técnico no local: $visita
     \nHorario preferencial: $visita1
     \nDescrição do defeito: $mensagem";
@@ -53,7 +50,7 @@ if ($erro == 0) {
   $headers .= "From: $email\n"; // remetente
   $headers .= "Return-Path: $email\n"; // return-path
 
-  if(mail("contato@refrigeracaopaiola.com.br","Mensagem - Web Site","$mensagem_ok", $headers)) {
+  if(mail("contato@refrigeracaopaiola.com.br","Contato Refrigeracao Paiola via web","$mensagem_ok", $headers)) {
     echo "$nome,</strong> em breve estaremos retornando seu contato.<br><br>Obrigado.";
   }
 }

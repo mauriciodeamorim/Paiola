@@ -80,14 +80,8 @@
               <td colspan="2" align="left" class="obrigatorio">* Campos Obrigatórios</td>
             </tr>
             <tr>
-              <td width="60%" align="left" class="texto_form"><span class="obrigatorio">*</span>Nome:<br />
+              <td width="60%" align="left" class="texto_form"><span class="obrigatorio">*</span> Nome:<br />
                 <input name="nome" type="text" class="box_txt" id="nome" value="" size="30" /></td>
-              <td width="40%" align="left" class="texto_form">Empresa:<br />
-                <input name="empresa" type="text" class="box_txt" id="empresa" value="" size="30" /></td>
-            </tr>
-            <tr>
-              <td align="left" valign="top" class="texto_form">Estado:<br />
-                <input name="estado" type="text" class="box_txt" id="estado" value="" size="30" /></td>
               <td align="left" class="texto_form"><span class="obrigatorio">* </span>Cidade:<br />
                 <input name="cidade" type="text" class="box_txt" id="cidade" value="" size="30" /></td>
             </tr>
@@ -96,18 +90,12 @@
                 <textarea name="endereco" cols="26" rows="2" class="box_txt" id="endereco"></textarea></td>
             </tr>
             <tr>
-              <td align="left" valign="top" class="texto_form"><span class="obrigatorio">* </span>Telefone Nº:<br />
-                <input name="telefone" type="text" class="box_txt" id="telefone" value="DDD+Telefone" size="4" maxlength="30"/></td>
-              <td align="left" class="texto_form">Telefone Comercial:<br />
-                <input name="fax" type="text" class="box_txt" id="fax" value="DDD+Telefone" size="4" maxlength="30" /></td>
+              <td width="60%" align="left" valign="top" class="texto_form"><span class="obrigatorio">*</span> Telefone Nº:<br />
+                <input name="telefone" type="text" class="box_txt" id="telefone" value="DDD+Telefone" size="30" maxlength="20" /></td>
+              <td align="left" valign="top" class="texto_form"><span class="obrigatorio">*</span> E-mail:<br />
+                <input name="email" type="text" class="box_txt" id="email" value="" size="30" /></td>
             </tr>
             <tr>
-              <td align="left" valign="top" class="texto_form"><p><span class="obrigatorio">*</span> E-mail:<br />
-                  <input name="email" type="text" class="box_txt" id="email" value="" size="30"/>
-                </td>
-                <td align="left" class="texto_form">Página Web (URL):<br />
-                  <input name="url" type="text" class="box_txt" id="url" value="" size="30" /></td>
-              </tr>
               <td align="left" class="texto_form">Gostaria de  receber a visita de um técnico no local?<br />
                 <input type="radio" name="visita" id="visita" value="sim" tabindex="9" size="8" />
                 <label for="visita">Sim</label>
@@ -120,15 +108,13 @@
                 <input type="radio" name="visita1" id="visita1" value="tarde" tabindex="9" size="8" />
                 <label for="visita1">Tarde</label>
               </td>
-              <tr align="center" >
-                <td colspan="2" align="left" class="texto_form"><span class="obrigatorio">*</span> Descrição do defeito:<br />
-                  <textarea name="mensagem" cols="70" rows="6" class="box_txt" id="mensagem"></textarea></td>
-              </tr>
-              <tr>
-                <td align="left"><input name="Submit" type="submit" class="btn" value="Enviar" /></td>
-              </tr>
-              <tr>
-                <td></tr></td>
+            </tr>
+            <tr align="center" >
+              <td colspan="2" align="left" class="texto_form"><span class="obrigatorio">*</span> Descrição do defeito:<br />
+                <textarea name="mensagem" cols="70" rows="6" class="box_txt" id="mensagem"></textarea></td>
+            </tr>
+            <tr>
+              <td align="left"><input name="Submit" type="submit" class="btn" value="Enviar" /></td>
             </tr>
           </table>
 
