@@ -1,14 +1,10 @@
-/* These are just the demo styles and these can be removed and Orbit 
-will still work like a champ (except any content block needs a background which
-our demo gets from this sheet) */
-
 .container {
     position: absolute; 
     top: 50%; 
     left: 50%;
     margin: -300px 0 0 -470px; }
     
-.content { background: url(dummy-images/freezer-e-geladeiras.jpg); }
+.content { background: url(../dummy-images/freezer-e-geladeiras.jpg); }
 .content h1 {
 	font-size: 40px; 
 	text-transform: uppercase; 
@@ -21,7 +17,4 @@ our demo gets from this sheet) */
 	text-align: center; 
 	font-size: 22px; 
 	color: #222; }
-    
-/*	--------------------------------------------------
-	Global Reset & Standards
-	-------------------------------------------------- */
+
