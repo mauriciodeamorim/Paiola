@@ -8,6 +8,15 @@
 <body>
 <?php
 $erro = 0;
+/* Medida preventiva para evitar que outros domÌnios sejam remetente da sua mensagem. */
+if (eregi('tempsite.ws$|locaweb.com.br$|hospedagemdesites.ws$|websiteseguro.com$', $_SERVER[HTTP_HOST])) {
+  $emailsender = "contato@refrigeracaopaiola.com.br";
+} else {
+  $emailsender = "webmaster@" . $_SERVER[HTTP_HOST];
+  //    Na linha acima estamos forÁando que o remetente seja 'webmaster@seudominio',
+  // VocÍ pode alterar para que o remetente seja, por exemplo, 'contato@seudominio'.
+}
+
 
 if (empty($nome)){
   $erro .= $erro++;
@@ -42,10 +51,11 @@ if ($erro == 0) {
   
   $headers = "MIME-Version: 1.1\n";
   $headers .= "Content-type: text/plain; charset=utf-8\n";
-  $headers .= "From: $email\n"; // remetente
-  $headers .= "Return-Path: $email\n"; // return-path
+  $headers .= "From: $emailsender\n"; // remetente
+  $headers .= "Return-Path: $emailsender\n"; // return-path
+  //$headers .= "Replay-To: $email\n";
 
-  if(mail("contato@refrigeracaopaiola.com.br","Contato Refrigeracao Paiola via web","$mensagem_ok", $headers)) {
+  if(mail("contato@refrigeracaopaiola.com.br", "Contato Refrigeracao Paiola via Web Site", "$mensagem_ok", $headers)) {
     echo "$nome,</strong> em breve estaremos retornando seu contato.<br><br>Obrigado.";
   }
 }
